@@ -1,0 +1,110 @@
+
+body{
+    font-weight: 400;
+    padding-top: 70px
+}
+.container{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* 标题栏总体 边距 设置*/
+.navbar-fixed-top .nav{
+    padding: 15px 0px;
+}
+
+.navbar-right{
+    margin-right: 10px;
+}
+.navbar{
+    border-width: thin;
+    -webkit-transition: .2s;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: white;
+}
+
+/*.navbar-scroll {
+    background-color: white;
+      animation-duration: 2s;
+      animation-name: smooth;
+      -moz-box-shadow: 1px 1px 1px #999;
+      -webkit-box-shadow: 1px 1px 1px #999;
+      box-shadow: 1px 1px 1px #999;
+  }
+*/
+
+/* logo设置 */
+.navbar-fixed-top .navbar-brand{
+    padding: 25px 0px;
+    margin-left: 15px;
+}
+
+.myspan{
+    font-size: 30px;
+    color: #E46E2E;
+    padding: 15px 0px;
+}
+
+.navbar-logo{
+    height: 45px;
+}
+
+/*字体显示颜色设置*/
+.navbar-nav > li > .navbar-active{
+    color: #e46e2e;
+}
+.navbar a{
+    color: black;
+}
+.nav > li >a{
+    font-size: 16px;
+    padding: 12px 12px 10px; 
+}
+.nav > li > a:hover{
+    background-color: transparent;
+    color: #e46e2e;
+    -webkit-transition: .2s
+} 
+
+.nav > li > a:focus{
+    background-color: white;
+}
+
+.nav > li > a:active{
+    background-color: #f8f8f8;
+}
+.nav > li > a:visited {
+    background-color: #F8F8F8;
+}
+.tab:hover {
+    background-color: transparent;
+    color: #E46E2E;
+} 
+
+/* .sidebar-menu > li{
+    margin-left: 0px;
+    height: 56px;
+    padding: 0px 20px;
+    width: 100%
+}
+.sidebar-menu > li > a:hover{
+    background-color: #d1dbe5;
+    display:inline;
+    -webkit-transition: .4s
+}*/
+.sidebar-menu > li >a{
+    color: #48576C;
+    font-size: 16px;
+    padding: 20px 5px 12px 15px;
+    text-decoration:none;
+    cursor:pointer ;
+    display: block;
+}  
+.treeview-menu > li >a{
+    color: #48576C;
+    font-size: 16px;
+    padding: 15px 0px;
+    text-decoration:none;
+    cursor:pointer 
+}

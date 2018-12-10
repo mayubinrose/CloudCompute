@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.SexAnalysisMapper">
+
+    <select id="showSexAnalysisById" parameterType="com.example.demo.common.ParamObject" resultType="com.example.demo.model.SexAnalysis">
+        select sex sexType, count(*) sexNum from t_facefeature a ,(select face_id  from t_entrytime where user_id=#{userId} and  str_to_date(#{endDate}, '%Y-%m-%d') &lt;= str_to_date(entry_time, '%Y-%m-%d') and str_to_date(#{startDate}, '%Y-%m-%d') &gt;= str_to_date(entry_time, '%Y-%m-%d')) b where a.face_id = b.face_id group by sex
+    </select>
+</mapper>
